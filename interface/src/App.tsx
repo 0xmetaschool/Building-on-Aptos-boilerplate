@@ -181,7 +181,7 @@ const App: React.FC = () => {
 
         const payload: InputTransactionData = {
           data: {
-            function: `${moduleAddress}::calculator_l12::${functionName}`,
+            function: `${moduleAddress}::${moduleName}::${functionName}`,
             functionArguments: [num1, num2],
           },
         };
@@ -192,7 +192,7 @@ const App: React.FC = () => {
 
         const resultData = await client.getAccountResource({
           accountAddress: account?.address,
-          resourceType: `${moduleAddress}::calculator_l12::Calculator`,
+          resourceType: `${moduleAddress}::${moduleName}::Calculator`,
         });
 
         console.log(resultData);
@@ -215,7 +215,7 @@ const App: React.FC = () => {
       console.log("Toggling active state: " + isActive);
       const payload: InputTransactionData = {
         data: {
-          function: `${moduleAddress}::calculator_l12::create_calculator`,
+          function: `${moduleAddress}::${moduleName}::create_calculator`,
           functionArguments: [],
         },
       };
