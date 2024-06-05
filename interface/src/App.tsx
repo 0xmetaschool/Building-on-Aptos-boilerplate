@@ -196,8 +196,7 @@ const App: React.FC = () => {
         });
 
         console.log(resultData);
-        const decodedResult = hexToString(resultData.result.toString());
-        setResult(decodedResult.substring(1, decodedResult.length));
+        setResult(resultData.result.toString());
       } catch (error) {
         console.error(error);
       } finally {
@@ -223,14 +222,6 @@ const App: React.FC = () => {
       const response = await signAndSubmitTransaction(payload);
       console.log(response);
     }
-  };
-
-  const hexToString = (hex: string) => {
-    let string = "";
-    for (let i = 0; i < hex.length; i += 2) {
-      string += String.fromCharCode(parseInt(hex.substr(i, 2), 16));
-    }
-    return string;
   };
 
   const connectedView = () => {
