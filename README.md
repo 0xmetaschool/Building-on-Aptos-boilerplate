@@ -1,8 +1,8 @@
 # Instructions
 
-- Clone the repository once
+- Clone the repository once by running : `git clone https://github.com/boneycanute/Building-on-Aptos.git`
 - cd into the projector folder by running `cd Building-on-Aptos`
-- Multiple branches are already present containing code for each lesson.
+- Multiple branches are already present containing code for the required lessons.
 - To view all available branches run : `git branch`
 - Use the code branch of the specfic lesson by running : 'git checkout <branchName>'
 
