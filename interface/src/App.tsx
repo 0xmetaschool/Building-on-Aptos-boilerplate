@@ -16,7 +16,7 @@ import {
 import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
 import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
 import styled from "styled-components";
-import metaschoolLogo from "./Assets/Metaschool Black Logo 64px.png";
+import metaschoolLogo from "./Assets/Metaschool Logo Black.png";
 
 const aptosConfig = new AptosConfig({ network: Network.TESTNET });
 const client = new Aptos(aptosConfig);
