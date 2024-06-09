@@ -1,4 +1,4 @@
-# Instructions
+# Instructions - 1
 
 - Clone the repository once by running : `git clone https://github.com/boneycanute/Building-on-Aptos.git`
 - cd into the projector folder by running `cd Building-on-Aptos`
