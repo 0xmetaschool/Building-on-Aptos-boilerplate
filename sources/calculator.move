@@ -5,7 +5,7 @@ module metaschool::calculator_l12 {
         result: vector<u8>,  // Result will be of type string 
     }
 
-    public entry fun create_calculator(account: &signer) acquires Calculator {
+    fun create_calculator(account: &signer) acquires Calculator {
         if (exists<Calculator>(signer::address_of(account))){
             let calculator = borrow_global_mut<Calculator>(signer::address_of(account));
             calculator.result = b"";  
